@@ -11,7 +11,7 @@ Usage: PuzzleADaySolver <month> <day>
 Month must be between 1 and 12 and day must be between 1 and 31
 
 $ python PuzzleADaySolver.py 5 1
-Solutions: 1
+Solution #1
 Iterations: 77
 
 1 1 1 4 X 4
@@ -22,7 +22,7 @@ X 2 8 3 3 3 3
 7 7 6 6 6 5 5
 7 6 6
 
-Solutions: 2
+Solution #2
 Iterations: 728
 
 1 1 1 4 X 4
@@ -35,7 +35,7 @@ X 7 7 7 7 3 3
 
 ...
 
-Solutions: 57
+Solution #57
 Iterations: 27,493
 
 5 5 7 4 X 4
