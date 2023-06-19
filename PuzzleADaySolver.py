@@ -201,7 +201,7 @@ class PuzzleADaySolver:
         # win condition is whole board is covered in pieces
         if all([all(row) for row in board]):
             self.solutions.append(board)
-            print(f"Solutions: {len(self.solutions):,}")
+            print(f"Solution #{len(self.solutions):,}")
             print(f"Iterations: {self.iterations:,}\n")
             self.draw_board(board)
             return board
