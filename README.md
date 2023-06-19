@@ -1,6 +1,8 @@
 # PuzzleADaySolver
 Command line tool to solve the [DragonFjord Puzzle-A-Day](https://www.dragonfjord.com/product/a-puzzle-a-day/) puzzle for any day/month.
 
+<img src="https://github.com/andrewmk/PuzzleADaySolver/assets/1872642/c61ba71e-2363-473d-9d8b-53c9052060ff" width="400">
+
 Based on https://github.com/aydinschwa/Puzzle-Solver
 
 ```
