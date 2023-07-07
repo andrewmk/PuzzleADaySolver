@@ -2,7 +2,9 @@ import sys
 
 class PuzzleADaySolver:
 
-    def __init__(self, month, day):
+    def __init__(self, month, day, just_count = False):
+
+        self.just_count = just_count
 
         self.pieces = (
 
@@ -201,9 +203,10 @@ class PuzzleADaySolver:
         # win condition is whole board is covered in pieces
         if all([all(row) for row in board]):
             self.solutions.append(board)
-            print(f"Solution #{len(self.solutions):,}")
-            print(f"Iterations: {self.iterations:,}\n")
-            self.draw_board(board)
+            if not self.just_count:
+                print(f"Solution #{len(self.solutions):,}")
+                print(f"Iterations: {self.iterations:,}\n")
+                self.draw_board(board)
             return board
         else:
             piece_positions = pieces[0]
@@ -219,12 +222,16 @@ class PuzzleADaySolver:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
+    if len(sys.argv) >= 3:
         month = int(sys.argv[1])
         day = int(sys.argv[2])
+        just_count = False
+        if len(sys.argv) > 3:
+          if sys.argv[3] == "--count":
+            just_count = True
         if (month >= 1) and (month <= 12) and (day >= 1) and (day <= 31):
-            PuzzleADaySolver(month, day).run()
+            PuzzleADaySolver(month, day, just_count).run()
         else:
-            print("Usage: PuzzleADaySolver <month> <day>\nMonth must be between 1 and 12 and day must be between 1 and 31")
+            print("Usage: PuzzleADaySolver <month> <day> [--count]\nMonth must be between 1 and 12 and day must be between 1 and 31")
     else:
-        print("Usage: PuzzleADaySolver <month> <day>\nMonth must be between 1 and 12 and day must be between 1 and 31")
+        print("Usage: PuzzleADaySolver <month> <day> [--count]\nMonth must be between 1 and 12 and day must be between 1 and 31")
