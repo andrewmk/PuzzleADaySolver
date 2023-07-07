@@ -5,6 +5,10 @@ Command line tool to solve the [DragonFjord Puzzle-A-Day](https://www.dragonfjor
 
 Based on https://github.com/aydinschwa/Puzzle-Solver
 
+Heatmap of how many solutions each day/month combination has. Red is fewer solutions, green is more:
+
+<img src="https://github.com/andrewmk/PuzzleADaySolver/assets/1872642/b164fd87-2bb6-4ef4-b13a-8c8289d0d9d0" width="600">
+
 ```
 $ python PuzzleADaySolver.py
 Usage: PuzzleADaySolver <month> <day> [--count]
