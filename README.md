@@ -7,8 +7,9 @@ Based on https://github.com/aydinschwa/Puzzle-Solver
 
 ```
 $ python PuzzleADaySolver.py
-Usage: PuzzleADaySolver <month> <day>
+Usage: PuzzleADaySolver <month> <day> [--count]
 Month must be between 1 and 12 and day must be between 1 and 31
+Use --count to only see the total number of solutions for a date.
 
 $ python PuzzleADaySolver.py 5 1
 Solution #1
