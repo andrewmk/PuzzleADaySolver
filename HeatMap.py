@@ -6,4 +6,4 @@ for month in range(1, 13):
         solver.solve_board(solver.board, solver.piece_positions)
         num_solutions = len(solver.solutions)
         print(f"{num_solutions}, ", end = '', flush = True)
-    print("\n")
+    print("")
